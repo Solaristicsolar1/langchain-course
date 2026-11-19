@@ -1,0 +1,25 @@
+[project]
+name = "langchain-course"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "samuel", email = "sodiqsamuel7@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "langchain>=1.5.0",
+    "langchain-groq>=1.2.0",
+    "langchain-tavily>=0.2.18",
+    "pydantic>=2.14.3",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+langchain-course = "langchain_course:main"
+
+[build-system]
+requires = ["uv_build>=0.12.12,<0.13.0"]
+build-backend = "uv_build"
